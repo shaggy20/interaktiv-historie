@@ -1,0 +1,114 @@
+:: StoryTitle
+24
+
+
+:: StoryData
+{
+  "ifid": "C0110408-164C-4702-A8BE-BDE7DE189E6C",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Start1",
+  "tag-colors": {
+    "startup": "yellow"
+  },
+  "zoom": 0.6
+}
+
+
+:: Start1 {"position":"100,100","size":"100,100"}
+<img width=400 src="https://image2url.com/r2/default/images/1773233090208-00ed0f2f-b896-4cc3-923d-bb4f076d4107.png" alt="image" />
+
+Du våkner opp i et ukjent sted
+og ser et tre?
+
+[[vent->vent1]]
+[[utforsk->utforsk1]]
+
+
+:: bad {"position":"500,300","size":"100,100"}
+<img width=400 src="https://image2url.com/r2/default/images/1773233090208-00ed0f2f-b896-4cc3-923d-bb4f076d4107.png" alt="image" />
+
+Du går og plutselig er du tilbake der du startet
+det er ingenting å gjøre
+
+[[vent->vent1]]
+
+
+:: good {"position":"700,100","size":"100,100"}
+<img width=400 src="https://image2url.com/r2/default/images/1773233090208-00ed0f2f-b896-4cc3-923d-bb4f076d4107.png" alt="image" />
+
+Du går og plutselig er du tilbake der du startet
+
+[[gi vannet til treet->trevann]]
+[[drikk vannet foran treet->tretrist]]
+[[vent->vent1]]
+
+
+:: tretrist {"position":"700,300","size":"100,100"}
+<img width=400 src="https://image2url.com/r2/default/images/1773233090208-00ed0f2f-b896-4cc3-923d-bb4f076d4107.png" alt="image" />
+
+Du drikker alt vannet foran treet
+treet strekker seg for å få tak i deg
+
+treet skal få tak i vann
+vannet som du drakk
+
+
+:: trevann {"position":"900,100","size":"100,100"}
+<img width=400 src="https://image2url.com/r2/default/images/1773233090208-00ed0f2f-b896-4cc3-923d-bb4f076d4107.png" alt="image" />
+
+Du heller alt vannet ditt på treet
+og du føler deg bedre
+
+
+
+:: utforsk1 {"position":"300,100","size":"100,100"}
+<img width=400 src="https://image2url.com/r2/default/images/1773232986348-0638e73c-294f-4f53-9346-ed4bf8bd593e.png" alt="image" />
+
+Du går og går uten å finne noe som helst
+det er for sent for å gå tilbake
+
+[[fortsett->utforsk2]]
+
+
+
+:: utforsk2 {"position":"500,100","size":"100,100"}
+<img width=400 src="https://image2url.com/r2/default/images/1773233029368-5717bf8e-8b06-4568-bfc4-69ffeaf173e1.png" alt="image" />
+
+Du finner en flaske med vann
+
+[[drikk vannet->bad]]
+[[ta med vannet->good]]
+
+
+:: vent1 {"position":"100,300","size":"100,100"}
+<img width=400 src="https://image2url.com/r2/default/images/1773233090208-00ed0f2f-b896-4cc3-923d-bb4f076d4107.png" alt="image" />
+
+Du venter men ingenting skjer
+tingen foran deg har ikke gjort noe men du føler at den følger med
+
+[[vent->vent2]]
+
+
+:: vent2 {"position":"100,500","size":"100,100"}
+<img width=400 src="https://image2url.com/r2/default/images/1773233090208-00ed0f2f-b896-4cc3-923d-bb4f076d4107.png" alt="image" />
+
+Du sulter, treet har ingen frukt å gi
+
+[[vent->vent3]]
+
+
+:: vent3 {"position":"100,700","size":"100,100"}
+<img width=400 src="https://image2url.com/r2/default/images/1773233090208-00ed0f2f-b896-4cc3-923d-bb4f076d4107.png" alt="image" />
+
+Du vet ikke hvor lenge du har vært her
+timer, dager, uker, måner
+
+Du har brukt all din tid på å sitte her å stirre på treet, du dør etter hvert uten å prøve å finne noe mat
+
+
+:: StoryStylesheet [stylesheet]
+img {
+  max-width: 100%;
+  border-radius: 5px;
+}
